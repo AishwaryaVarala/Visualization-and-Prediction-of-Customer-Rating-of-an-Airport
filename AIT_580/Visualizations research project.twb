@@ -1,0 +1,1227 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0818.2120                               -->
+<workbook original-version='18.1' source-build='2019.2.3 (20192.19.0818.2120)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Airport_Quarterly_Passenger_Survey' inline='true' name='federated.04a8ds31otex2k1ekbvso0rqt80r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Airport_Quarterly_Passenger_Survey' name='textscan.0sopzgp1yv455a10tw2tn04qu5e1'>
+            <connection class='textscan' directory='C:/Users/aishw/OneDrive/Desktop/Courses 1.2/Ait-580/Research Project' filename='Airport_Quarterly_Passenger_Survey.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0sopzgp1yv455a10tw2tn04qu5e1' name='Airport_Quarterly_Passenger_Survey.csv' table='[Airport_Quarterly_Passenger_Survey#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Quarter' ordinal='0' />
+            <column datatype='date' name='Date recorded' ordinal='1' />
+            <column datatype='datetime' name='Departure time' ordinal='2' />
+            <column datatype='integer' name='Ground transportation to/from airport' ordinal='3' />
+            <column datatype='integer' name='Parking facilities' ordinal='4' />
+            <column datatype='integer' name='Parking facilities (value for money)' ordinal='5' />
+            <column datatype='integer' name='Availability of baggage carts' ordinal='6' />
+            <column datatype='integer' name='Efficiency of check-in staff' ordinal='7' />
+            <column datatype='integer' name='Check-in wait time' ordinal='8' />
+            <column datatype='integer' name='Courtesy of of check-in staff' ordinal='9' />
+            <column datatype='integer' name='Wait time at passport inspection' ordinal='10' />
+            <column datatype='integer' name='Courtesy of inspection staff' ordinal='11' />
+            <column datatype='integer' name='Courtesy of security staff' ordinal='12' />
+            <column datatype='integer' name='Thoroughness of security inspection' ordinal='13' />
+            <column datatype='integer' name='Wait time of security inspection' ordinal='14' />
+            <column datatype='integer' name='Feeling of safety and security' ordinal='15' />
+            <column datatype='integer' name='Ease of finding your way through the airport' ordinal='16' />
+            <column datatype='integer' name='Flight information screens' ordinal='17' />
+            <column datatype='integer' name='Walking distance inside terminal' ordinal='18' />
+            <column datatype='integer' name='Ease of making connections' ordinal='19' />
+            <column datatype='integer' name='Courtesy of airport staff' ordinal='20' />
+            <column datatype='integer' name='Restaurants' ordinal='21' />
+            <column datatype='integer' name='Restaurants (value for money)' ordinal='22' />
+            <column datatype='integer' name='Availability of banks/ATM/money changing' ordinal='23' />
+            <column datatype='integer' name='Shopping facilities' ordinal='24' />
+            <column datatype='integer' name='Shopping facilities (value for money)' ordinal='25' />
+            <column datatype='integer' name='Internet access' ordinal='26' />
+            <column datatype='integer' name='Business/executive lounges' ordinal='27' />
+            <column datatype='integer' name='Availability of washrooms' ordinal='28' />
+            <column datatype='integer' name='Cleanliness of washrooms' ordinal='29' />
+            <column datatype='integer' name='Comfort of waiting/gate areas' ordinal='30' />
+            <column datatype='integer' name='Cleanliness of airport terminal' ordinal='31' />
+            <column datatype='integer' name='Ambience of airport' ordinal='32' />
+            <column datatype='integer' name='Arrivals passport and visa inspection' ordinal='33' />
+            <column datatype='integer' name='Speed of baggage delivery' ordinal='34' />
+            <column datatype='integer' name='Customs inspection' ordinal='35' />
+            <column datatype='integer' name='Overall satisfaction' ordinal='36' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Quarter]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date recorded</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date recorded]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Date recorded</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Departure time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Departure time]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Departure time</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ground transportation to/from airport</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ground transportation to/from airport]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Ground transportation to/from airport</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Parking facilities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Parking facilities]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Parking facilities</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Parking facilities (value for money)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Parking facilities (value for money)]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Parking facilities (value for money)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Availability of baggage carts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Availability of baggage carts]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Availability of baggage carts</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Efficiency of check-in staff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Efficiency of check-in staff]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Efficiency of check-in staff</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Check-in wait time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Check-in wait time]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Check-in wait time</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Courtesy of of check-in staff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Courtesy of of check-in staff]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Courtesy of of check-in staff</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wait time at passport inspection</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wait time at passport inspection]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Wait time at passport inspection</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Courtesy of inspection staff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Courtesy of inspection staff]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Courtesy of inspection staff</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Courtesy of security staff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Courtesy of security staff]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Courtesy of security staff</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Thoroughness of security inspection</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Thoroughness of security inspection]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Thoroughness of security inspection</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wait time of security inspection</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wait time of security inspection]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Wait time of security inspection</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Feeling of safety and security</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Feeling of safety and security]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Feeling of safety and security</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ease of finding your way through the airport</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ease of finding your way through the airport]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Ease of finding your way through the airport</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flight information screens</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Flight information screens]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Flight information screens</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Walking distance inside terminal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Walking distance inside terminal]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Walking distance inside terminal</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ease of making connections</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ease of making connections]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Ease of making connections</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Courtesy of airport staff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Courtesy of airport staff]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Courtesy of airport staff</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Restaurants</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Restaurants]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Restaurants</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Restaurants (value for money)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Restaurants (value for money)]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Restaurants (value for money)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Availability of banks/ATM/money changing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Availability of banks/ATM/money changing]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Availability of banks/ATM/money changing</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shopping facilities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Shopping facilities]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Shopping facilities</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shopping facilities (value for money)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Shopping facilities (value for money)]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Shopping facilities (value for money)</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Internet access</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Internet access]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Internet access</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business/executive lounges</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business/executive lounges]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Business/executive lounges</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Availability of washrooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Availability of washrooms]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Availability of washrooms</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cleanliness of washrooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cleanliness of washrooms]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Cleanliness of washrooms</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comfort of waiting/gate areas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Comfort of waiting/gate areas]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Comfort of waiting/gate areas</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cleanliness of airport terminal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cleanliness of airport terminal]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Cleanliness of airport terminal</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ambience of airport</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ambience of airport]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Ambience of airport</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrivals passport and visa inspection</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Arrivals passport and visa inspection]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Arrivals passport and visa inspection</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Speed of baggage delivery</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Speed of baggage delivery]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Speed of baggage delivery</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customs inspection</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customs inspection]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Customs inspection</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overall satisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Overall satisfaction]</local-name>
+            <parent-name>[Airport_Quarterly_Passenger_Survey.csv]</parent-name>
+            <remote-alias>Overall satisfaction</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column aggregation='Hour' datatype='datetime' name='[Departure time]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Overall satisfaction (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[Overall satisfaction]' peg='0' size='0.931' />
+      </column>
+      <column datatype='integer' name='[Overall satisfaction]' role='measure' type='quantitative' />
+      <column-instance column='[Overall satisfaction]' derivation='Attribute' name='[attr:Overall satisfaction:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Overall satisfaction]' derivation='Count' name='[cnt:Overall satisfaction:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Overall satisfaction]' derivation='CountD' name='[ctd:Overall satisfaction:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Overall satisfaction (bin)]' derivation='None' name='[none:Overall satisfaction (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Overall satisfaction]' derivation='None' name='[none:Overall satisfaction:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Overall satisfaction]' derivation='Sum' name='[sum:Overall satisfaction:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.236641' measure-ordering='alphabetic' measure-percentage='0.763359' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.04a8ds31otex2k1ekbvso0rqt80r].[cnt:Overall satisfaction:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.04a8ds31otex2k1ekbvso0rqt80r].[ctd:Overall satisfaction:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04a8ds31otex2k1ekbvso0rqt80r]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.04a8ds31otex2k1ekbvso0rqt80r].[attr:Overall satisfaction:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Overall satisfaction:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.04a8ds31otex2k1ekbvso0rqt80r].[sum:Overall satisfaction:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Overall satisfaction (bin):ok]' type='palette'>
+            <map to='#26897e'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f7d42a'>
+              <bucket>4</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Quarters bar graph'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Count of Overall Satisfaction per Quarter</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airport_Quarterly_Passenger_Survey' name='federated.04a8ds31otex2k1ekbvso0rqt80r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04a8ds31otex2k1ekbvso0rqt80r'>
+            <column datatype='integer' name='[Overall satisfaction]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Quarter]' role='dimension' type='nominal' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Overall satisfaction]' derivation='Sum' name='[sum:Overall satisfaction:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.04a8ds31otex2k1ekbvso0rqt80r].[sum:Overall satisfaction:qk]</rows>
+        <cols>[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Quarter:nk]</cols>
+      </table>
+      <simple-id uuid='{F6A50A70-C360-4630-8D0B-78DFACAD776F}' />
+    </worksheet>
+    <worksheet name='Regression analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Regression analysis for Overall satisfaction vs Cleanliness of Airport Terminal</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airport_Quarterly_Passenger_Survey' name='federated.04a8ds31otex2k1ekbvso0rqt80r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04a8ds31otex2k1ekbvso0rqt80r'>
+            <column datatype='integer' name='[Cleanliness of airport terminal]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Internet access]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Overall satisfaction]' role='measure' type='quantitative' />
+            <column-instance column='[Cleanliness of airport terminal]' derivation='None' name='[none:Cleanliness of airport terminal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Internet access]' derivation='None' name='[none:Internet access:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Overall satisfaction]' derivation='Sum' name='[sum:Overall satisfaction:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Internet access:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Internet access:ok]' />
+              <groupfilter function='member' level='[none:Internet access:ok]' member='0' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Internet access:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.04a8ds31otex2k1ekbvso0rqt80r].[sum:Overall satisfaction:qk]</rows>
+        <cols>[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Cleanliness of airport terminal:qk]</cols>
+      </table>
+      <simple-id uuid='{1BBF98C6-B5AE-4F22-BDE7-A3078C3CA8ED}' />
+    </worksheet>
+    <worksheet name='class distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Class Distribution for Top Three Quarters</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airport_Quarterly_Passenger_Survey' name='federated.04a8ds31otex2k1ekbvso0rqt80r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04a8ds31otex2k1ekbvso0rqt80r'>
+            <column datatype='integer' name='[Overall satisfaction (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[Overall satisfaction]' peg='0' size='0.931' />
+            </column>
+            <column datatype='integer' name='[Overall satisfaction]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Quarter]' role='dimension' type='nominal' />
+            <column-instance column='[Overall satisfaction]' derivation='Count' name='[cnt:Overall satisfaction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Overall satisfaction (bin)]' derivation='None' name='[none:Overall satisfaction (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Overall satisfaction (bin)]' derivation='None' name='[none:Overall satisfaction (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Overall satisfaction (bin):ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Overall satisfaction (bin):ok]' />
+              <groupfilter function='member' level='[none:Overall satisfaction (bin):ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Quarter:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Quarter:nk]' member='&quot;1Q15&quot;' />
+              <groupfilter function='member' level='[none:Quarter:nk]' member='&quot;1Q17&quot;' />
+              <groupfilter function='member' level='[none:Quarter:nk]' member='&quot;2Q17&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Quarter:nk]</column>
+            <column>[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Overall satisfaction (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04a8ds31otex2k1ekbvso0rqt80r].[cnt:Overall satisfaction:qk]' field-type='quantitative' max='220' min='1' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Overall satisfaction (bin):qk]' field-type='quantitative' major-origin='0' major-spacing='1.0' max='5.8653000000000004' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Overall satisfaction (bin):qk]' max='5.0' min='0.0' num-steps='4' reverse='true' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#9e3d22</color>
+                <color>#b24723</color>
+                <color>#c55123</color>
+                <color>#d85d21</color>
+                <color>#e96b21</color>
+                <color>#f17e29</color>
+                <color>#f79236</color>
+                <color>#fba749</color>
+                <color>#febb65</color>
+                <color>#ffcd93</color>
+                <color>#ffdfc0</color>
+                <color>#ffffff</color>
+                <color>#c4cbd1</color>
+                <color>#b1beca</color>
+                <color>#9eb1c3</color>
+                <color>#8da5bc</color>
+                <color>#7c99b5</color>
+                <color>#6c8ead</color>
+                <color>#5d83a6</color>
+                <color>#4f789f</color>
+                <color>#426e98</color>
+                <color>#366591</color>
+                <color>#2b5c8a</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Overall satisfaction (bin):ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='420' />
+                <format attr='maxwidth' value='420' />
+                <format attr='minheight' value='526' />
+                <format attr='maxheight' value='526' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04a8ds31otex2k1ekbvso0rqt80r].[cnt:Overall satisfaction:qk]</rows>
+        <cols>([federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Quarter:nk] * [federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Overall satisfaction (bin):qk])</cols>
+        <show-full-range>
+          <column>[federated.04a8ds31otex2k1ekbvso0rqt80r].[Overall satisfaction (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{05A82466-C01D-4687-A5F2-614A6653F166}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Quarters bar graph'>
+      <cards>
+        <edge name='left'>
+          <strip size='157'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04a8ds31otex2k1ekbvso0rqt80r].[:Measure Names]</field>
+            <field>[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Quarter:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3180473B-978C-4D78-AC6A-F22AB26B1CC3}' />
+    </window>
+    <window class='worksheet' name='class distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Overall satisfaction (bin):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Overall satisfaction (bin):ok]</field>
+            <field>[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Quarter:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8891D135-0291-406B-9411-0F5DADAAC68E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Regression analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Cleanliness of airport terminal:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04a8ds31otex2k1ekbvso0rqt80r].[none:Overall satisfaction (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1D3C690B-1CD9-4DC0-A1BE-FDF3BDDE8A49}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Quarters bar graph' width='192'>
+      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
+      73v+/wGJS+sCVwk/7gAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Regression analysis' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='class distribution' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
